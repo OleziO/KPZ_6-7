@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SportComplex</name>
+    </assembly>
+    <members>
+        <member name="M:SportComplex.Controllers.ClientController.GetAll">
+            <summary>
+            Get all clients
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.Models.Client"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.ClientController.GetById(System.Int32)">
+            <summary>
+            Gets the client with specified id
+            </summary>
+            <param name="id">id of the client</param>
+            <returns><see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> or the <see cref="T:Microsoft.AspNetCore.Mvc.NotFoundResult"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.ClientController.Add(SportComplex.DTOs.ClientDto)">
+            <summary>
+            Creates and adds new client to database
+            </summary>
+            <param name="clientDto">new client object</param>
+        </member>
+        <member name="M:SportComplex.Controllers.ClientController.Change(System.Int32,SportComplex.DTOs.ClientDto)">
+            <summary>
+            Changes the properties of the specified client in db
+            </summary>
+            <param name="clientDto">the changed version of the client</param>
+        </member>
+        <member name="M:SportComplex.Controllers.ClientController.Delete(System.Int32)">
+            <summary>
+            Removes the client with specified id from the db
+            </summary>
+            <param name="id">id of the specified client</param>
+            <returns>the deleted <see cref="T:SportComplex.ViewModels.ClientViewModel"/> object</returns>
+        </member>
+        <member name="M:SportComplex.Controllers.CoachController.GetAll">
+            <summary>
+            Get all coaches
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.ViewModels.CoachViewModel"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.CoachController.GetById(System.Int32)">
+            <summary>
+            Gets the coach with specified id
+            </summary>
+            <param name="id">id of the coach</param>
+            <returns><see cref="T:SportComplex.ViewModels.CoachViewModel"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.CoachController.Add(SportComplex.DTOs.CoachDto)">
+            <summary>
+            Creates and adds new coach to database
+            </summary>
+            <param name="coachDto">new coach object</param>
+        </member>
+        <member name="M:SportComplex.Controllers.CoachController.Change(System.Int32,SportComplex.DTOs.CoachDto)">
+            <summary>
+            Changes the properties of the specified coach in db
+            </summary>
+            <param name="coachDto">the changed version of the coach</param>
+        </member>
+        <member name="M:SportComplex.Controllers.CoachController.Delete(System.Int32)">
+            <summary>
+            Removes the coach with specified id from the db
+            </summary>
+            <param name="id">id of the specified coach</param>
+            <returns>the deleted <see cref="T:SportComplex.ViewModels.CoachViewModel"/> object</returns>
+        </member>
+        <member name="M:SportComplex.Controllers.TrainingController.GetAll">
+            <summary>
+            Get all trainings
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.ViewModels.TrainingViewModel"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.TrainingController.GetById(System.Int32)">
+            <summary>
+            Gets the training with specified id
+            </summary>
+            <param name="id">id of the training</param>
+            <returns><see cref="T:SportComplex.ViewModels.TrainingViewModel"/></returns>
+        </member>
+        <member name="M:SportComplex.Controllers.TrainingController.Add(SportComplex.DTOs.TrainingDto)">
+            <summary>
+            Creates and adds new training to database
+            </summary>
+            <param name="trainingDto">new training object</param>
+        </member>
+        <member name="M:SportComplex.Controllers.TrainingController.Change(System.Int32,SportComplex.DTOs.TrainingDto)">
+            <summary>
+            Changes the properties of the specified training in db
+            </summary>
+            <param name="trainingDto">the changed version of the training</param>
+        </member>
+        <member name="M:SportComplex.Controllers.TrainingController.Delete(System.Int32)">
+            <summary>
+            Removes the training with specified id from the db
+            </summary>
+            <param name="id">id of the specified training</param>
+            <returns>the deleted <see cref="T:SportComplex.ViewModels.TrainingViewModel"/> object</returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.IClientRepository.GetAll">
+            <summary>
+            Get all clients
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.Models.Client"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.IClientRepository.GetById(System.Int32)">
+            <summary>
+            Gets the client with specified id
+            </summary>
+            <param name="id">id of the client</param>
+            <returns><see cref="T:SportComplex.Models.Client"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.IClientRepository.Add(SportComplex.Models.Client)">
+            <summary>
+            Creates and adds new client to database
+            </summary>
+            <param name="client">new client object</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.IClientRepository.Change(SportComplex.Models.Client)">
+            <summary>
+            Changes the properties of the specified client in db
+            </summary>
+            <param name="client">the changed version of the client</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.IClientRepository.DeleteById(System.Int32)">
+            <summary>
+            Removes the client with specified id from the db
+            </summary>
+            <param name="id">id of the specified client</param>
+            <returns>the deleted <see cref="T:SportComplex.Models.Client"/> object</returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ICoachRepository.GetAll">
+            <summary>
+            Get all coaches
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.Models.Coach"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ICoachRepository.GetById(System.Int32)">
+            <summary>
+            Gets the coach with specified id
+            </summary>
+            <param name="id">id of the coach</param>
+            <returns><see cref="T:SportComplex.Models.Coach"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ICoachRepository.Add(SportComplex.Models.Coach)">
+            <summary>
+            Creates and adds new coach to database
+            </summary>
+            <param name="coach">new coach object</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ICoachRepository.Change(SportComplex.Models.Coach)">
+            <summary>
+            Changes the properties of the specified coach in db
+            </summary>
+            <param name="coach">the changed version of the coach</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ICoachRepository.DeleteById(System.Int32)">
+            <summary>
+            Removes the coach with specified id from the db
+            </summary>
+            <param name="id">id of the specified coach</param>
+            <returns>the deleted <see cref="T:SportComplex.Models.Coach"/> object</returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ITrainingRepository.GetAll">
+            <summary>
+            Get all trainings
+            </summary>
+            <returns>IEnumerable of <see cref="T:SportComplex.Models.Training"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ITrainingRepository.GetById(System.Int32)">
+            <summary>
+            Gets the training with specified id
+            </summary>
+            <param name="id">id of the training</param>
+            <returns><see cref="T:SportComplex.Models.Training"/></returns>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ITrainingRepository.Add(SportComplex.Models.Training)">
+            <summary>
+            Creates and adds new training to database
+            </summary>
+            <param name="training">new training object</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ITrainingRepository.Change(SportComplex.Models.Training)">
+            <summary>
+            Changes the properties of the specified training in db
+            </summary>
+            <param name="training">the changed version of the training</param>
+        </member>
+        <member name="M:SportComplex.DAL.Repositories.Interfaces.ITrainingRepository.DeleteById(System.Int32)">
+            <summary>
+            Removes the training with specified id from the db
+            </summary>
+            <param name="id">id of the specified training</param>
+            <returns>the deleted <see cref="T:SportComplex.Models.Training"/> object</returns>
+        </member>
+    </members>
+</doc>

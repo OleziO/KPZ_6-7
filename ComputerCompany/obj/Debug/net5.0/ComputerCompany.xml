@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComputerCompany</name>
+    </assembly>
+    <members>
+        <member name="M:ComputerCompany.Controllers.ClientController.GetAll">
+            <summary>
+            Get all clients
+            </summary>
+            <returns>IEnumerable of <see cref="T:ComputerCompany.ViewModels.ClientViewModel"/></returns>
+        </member>
+        <member name="M:ComputerCompany.Controllers.ClientController.GetById(System.Int32)">
+            <summary>
+            Gets the client with specified id
+            </summary>
+            <param name="id">id of the client</param>
+            <returns><see cref="T:ComputerCompany.ViewModels.ClientViewModel"/></returns>
+        </member>
+        <member name="M:ComputerCompany.Controllers.ClientController.Add(ComputerCompany.DTOs.ClientDto)">
+            <summary>
+            Creates and adds new client to database
+            </summary>
+            <param name="clientDto">new client object</param>
+        </member>
+        <member name="M:ComputerCompany.Controllers.ClientController.Change(System.Int32,ComputerCompany.DTOs.ClientDto)">
+            <summary>
+            Changes the properties of the specified client in db
+            </summary>
+            <param name="clientDto">the changed version of the client</param>
+        </member>
+        <member name="M:ComputerCompany.Controllers.ClientController.Delete(System.Int32)">
+            <summary>
+            Removes the client with specified id from the db
+            </summary>
+            <param name="id">id of the specified client</param>
+            <returns>the deleted <see cref="T:ComputerCompany.ViewModels.ClientViewModel"/> object</returns>
+        </member>
+        <member name="M:ComputerCompany.Controllers.GoodsController.GetAll">
+            <summary>
+            Get all goods
+            </summary>
+            <returns>IEnumerable of <see cref="T:ComputerCompany.Models.Goods"/></returns>
+        </member>
+        <member name="M:ComputerCompany.Controllers.GoodsController.GetById(System.Int32)">
+            <summary>
+            Gets the goods with specified id
+            </summary>
+            <param name="id">id of the goods</param>
+            <returns><see cref="T:Microsoft.AspNetCore.Mvc.OkObjectResult"/> or the <see cref="T:Microsoft.AspNetCore.Mvc.NotFoundResult"/></returns>
+        </member>
+        <member name="M:ComputerCompany.Controllers.GoodsController.Add(ComputerCompany.DTOs.GoodsDto)">
+            <summary>
+            Creates and adds new goods to database
+            </summary>
+            <param name="goodsDto">new goods object</param>
+        </member>
+        <member name="M:ComputerCompany.Controllers.GoodsController.Change(System.Int32,ComputerCompany.DTOs.GoodsDto)">
+            <summary>
+            Changes the properties of the specified goods in db
+            </summary>
+            <param name="goodsDto">the changed version of the goods</param>
+        </member>
+        <member name="M:ComputerCompany.Controllers.GoodsController.Delete(System.Int32)">
+            <summary>
+            Removes the goods with specified id from the db
+            </summary>
+            <param name="id">id of the specified goods</param>
+            <returns>the deleted <see cref="T:ComputerCompany.ViewModels.GoodsViewModel"/> object</returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IClientRepository.GetAll">
+            <summary>
+            Get all clients
+            </summary>
+            <returns>IEnumerable of <see cref="T:ComputerCompany.Models.Client"/></returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IClientRepository.GetById(System.Int32)">
+            <summary>
+            Gets the client with specified id
+            </summary>
+            <param name="id">id of the client</param>
+            <returns><see cref="T:ComputerCompany.Models.Client"/></returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IClientRepository.Add(ComputerCompany.Models.Client)">
+            <summary>
+            Creates and adds new client to database
+            </summary>
+            <param name="client">new client object</param>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IClientRepository.Change(ComputerCompany.Models.Client)">
+            <summary>
+            Changes the properties of the specified client in db
+            </summary>
+            <param name="client">the changed version of the client</param>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IClientRepository.DeleteById(System.Int32)">
+            <summary>
+            Removes the client with specified id from the db
+            </summary>
+            <param name="id">id of the specified client</param>
+            <returns>the deleted <see cref="T:ComputerCompany.Models.Client"/> object</returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IGoodsRepository.GetAll">
+            <summary>
+            Get all goods
+            </summary>
+            <returns>IEnumerable of <see cref="T:ComputerCompany.Models.Goods"/></returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IGoodsRepository.GetById(System.Int32)">
+            <summary>
+            Gets the good with specified id
+            </summary>
+            <param name="id">id of the goods</param>
+            <returns><see cref="T:ComputerCompany.Models.Goods"/></returns>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IGoodsRepository.Add(ComputerCompany.Models.Goods)">
+            <summary>
+            Creates and adds new goods to database
+            </summary>
+            <param name="goods">new goods object</param>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IGoodsRepository.Change(ComputerCompany.Models.Goods)">
+            <summary>
+            Changes the properties of the specified goods in db
+            </summary>
+            <param name="goods">the changed version of the goods</param>
+        </member>
+        <member name="M:ComputerCompany.DAL.Repositories.Interfaces.IGoodsRepository.DeleteById(System.Int32)">
+            <summary>
+            Removes the goods with specified id from the db
+            </summary>
+            <param name="id">id of the specified goods</param>
+            <returns>the deleted <see cref="T:ComputerCompany.Models.Goods"/> object</returns>
+        </member>
+    </members>
+</doc>
